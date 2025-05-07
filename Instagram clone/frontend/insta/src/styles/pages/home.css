@@ -1,0 +1,32 @@
+.home-page {
+  display: flex;
+  margin-left: 250px; /* Sidebar ki width ke barabar */
+  padding: 20px 40px;
+  gap: 40px; /* Teeno sections ke beech mein spacing */
+  box-sizing: border-box;
+}
+
+.feed {
+  flex: 2; /* Feed ko zyada space dena */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-sidebar {
+  flex: 1; /* Right sidebar ko kam space dena */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home-page {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .feed, .right-sidebar {
+    flex: none;
+    width: 100%;
+  }
+}

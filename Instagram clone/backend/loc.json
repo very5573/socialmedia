@@ -1,0 +1,6 @@
+{
+  "imageUploadPath": "uploads/images",
+  "videoUploadPath": "uploads/videos",
+  "staticUrl": "uploads",
+  "serverPort": 5000
+}

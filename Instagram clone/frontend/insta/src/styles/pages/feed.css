@@ -1,0 +1,72 @@
+/* Feed Wrapper */
+.feed-wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Post Card */
+.post-card {
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #bbb;
+  overflow: hidden;
+}
+
+/* Profile Image */
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Post Image Placeholder */
+.post-image-placeholder {
+  width: 100%;
+  height: 500px; /* Adjust the height according to your requirement */
+  background-color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Post Image */
+.post-image-placeholder img.post-image {
+  width: 100%; /* Ensure the image takes full width */
+  height: 100%; /* Set the height to 100% to fill the container */
+  object-fit: contain; /* Ensure the image fits without cutting */
+  object-position: center; /* Keep the image center to avoid cutting of top or bottom */
+  display: block;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .feed-wrapper {
+    padding: 0 10px;
+  }
+
+  .post-image-placeholder {
+    height: 350px; /* Adjust height for smaller screens */
+  }
+}

@@ -1,0 +1,80 @@
+/* Feed Layout */
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 0; /* Remove side padding */
+  margin: 0;
+}
+
+/* Post Component - Full screen width */
+.post {
+  position: relative;
+  width: 100vw; /* Force full viewport width */
+  margin-left: calc(-50vw + 50%); /* Center the full-width post in middle column layout */
+  border: none;
+  border-radius: 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Post Image - Full width, no cropping */
+.post img {
+  width: 100vw;       /* Stretch to full screen width */
+  height: auto;       /* Keep full height - no crop */
+  object-fit: cover;  /* Optional: makes it look cleaner for large images */
+  display: block;
+}
+
+/* Post Actions */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.post-actions .left-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+  color: #555;
+}
+
+.post-actions .three-dots {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Post Description */
+.post-description {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.post-description p {
+  margin: 0;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+/* Responsive (optional) */
+@media screen and (max-width: 768px) {
+  .post,
+  .post img {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  .post-description {
+    padding: 10px;
+  }
+
+  .post-actions {
+    padding: 8px;
+  }
+}

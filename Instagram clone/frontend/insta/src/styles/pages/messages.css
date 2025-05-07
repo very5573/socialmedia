@@ -1,0 +1,22 @@
+.messages-page {
+  padding: 20px;
+}
+.chat {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.incoming, .outgoing {
+  padding: 10px 14px;
+  margin: 6px 0;
+  border-radius: 18px;
+  max-width: 70%;
+}
+.incoming {
+  background-color: #efefef;
+  align-self: flex-start;
+}
+.outgoing {
+  background-color: #3797f0;
+  color: white;
+  align-self: flex-end;
+}

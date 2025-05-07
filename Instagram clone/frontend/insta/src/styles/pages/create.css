@@ -1,0 +1,76 @@
+/* Create page container */
+.create-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4;
+}
+
+/* Upload section styling */
+.upload-section {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Limit max width */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between the file input and upload button */
+  height: 250px; /* Adjust based on your content size */
+}
+
+/* File input styling */
+.file-input {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  width: 100%;
+  margin-bottom: 20px; /* Space between file input and upload button */
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.file-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Upload button styling */
+.upload-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto; /* Push the button to the bottom */
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Upload message styling */
+.upload-message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Optional: add a success message color */
+.upload-message.success {
+  color: #28a745;
+}
+
+/* Optional: add an error message color */
+.upload-message.error {
+  color: #dc3545;
+}
